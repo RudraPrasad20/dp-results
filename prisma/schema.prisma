@@ -1,0 +1,872 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model GovernmentCollegeOfEngineeringKeonjhar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model IndiraGandhiInstituteOfTechnologySarang {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model ParalaMaharajaEngineeringCollegeBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model CentralInstituteOfPetrochemicalsEngineeringAndTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model CentreForUgAndPgStudiesBputRourkela {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SeemantaEngineeringCollegeJharpokharia {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model RolandInstituteOfTechnologyBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BhadrakInstituteOfEngineeringAndTechnologyBhadrak {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model AjayBinayInstituteOfTechnologyCuttack {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SiliconInstituteOfTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model KonarkInstituteOfScienceAndTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model PadmashreeKrutarthaAcharyaCollegeOfEngineeringBargarh {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model CollegeOfEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SanjayMemorialInstituteOfTechnologyBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model MajhigharianiInstituteOfTechnologyAndScienceRayagada {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BalasoreInstituteOfEngineeringAndTechnologyBalasore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GopalKrushnaCollegeOfEngineeringAndTechnologyJaypore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model DriemsCuttack {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SynergyInstituteOfEngineeringAndTechnologyDhenkanal {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SamantaChandraSekharInstituteOfTechnologyAndManagementSimiliguda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model MahavirInstituteOfEngineeringTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteForTechnologicalAdvancementBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model NmInstituteOfEnigneerigAndTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model TridentAcademyOfTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model TheTechnoSchoolBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiEngineeringCollegeBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SatyasaiEngineeringCollegeBalasore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model RajdhaniEngineeringCollegeBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model NalandaInstituteOfTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteForTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model TemplecityInstituteOfTechnologyAndEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model HiTechInstituteOfTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model VignanInstituteOfTechnologyAndManagementBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model ModernEngineeringAndManagementStudiesBalasore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteOfTechnologyAndManagementBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model KalamInstituteOfTechnologyBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BlackDimondInstituteOfEngineeringAndTechnolgyJharsuguda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model ModernInstituteOfTechnologyAndManagementBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SubasInstituteOfTechnologyBarang {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GurukulInstituteOfTechnolgyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BhubaneswarEngineeringCollegeBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteOfScienceAndTechnolgyRaygada {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model IndusCollegeOfEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SundargarhEngineeringCollegeSundargarh {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model AryanInstituteOfEngineeringAndTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BhubaneswarInstituteOfTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model EinsteinAcademyOfTechnologyAndManagementBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandiAcademyOfTechnologyAndEngineeringBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteForEducationAndTechnologyKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model IndotechCollegeOfEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model KmbbCollegeOfEngineeringAndTechnologyKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SrinixCollegeOfEngineeringBalasore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SophitoriumEngineeringCollegeKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SuddhanandaEngineeringAndResearchCentreCuttack {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SynergyInstituteOfTechnologyPahala {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SpintronicTechnologyAndAdvanceResearchKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model VikashInstituteOfTechnologyBargarh {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model VedangInstituteOfTechnologyKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SiliconInstituteOfTechnologySambalpur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model OxfordCollegeOfEngineeringAndManagementBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model VijayanjaliInstituteOfTechnologyBalasore {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model VitsEngineeringCollegeKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model AdarshaCollegeOfEngineeringAnugul {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model NigamInstituteOfEngineeringAndTechnologyBarang {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteOfExcellentTechnocratsBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model CapitalEngineeringCollegeBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model RayagadaInsituteOfTechnologyAndManagementRayagada {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model KruttikaInsituteOfTechnicalEducationKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BhubaneswarInstituteOfIndustrialTechnologyKhurda {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model BhubaneswarCollegeOfEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GandhiInstituteOfAdvancedComputerAndResearchRayagada {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model NistInstituteOfScienceAndTechnologyBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model RadhakrishnaInstituteOfTechnologyAndEngineeringBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model GayatriCollegeOfEngineeringBerhampur {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model MaharajaPolytechnicBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model NiisInstituteOfEngineeringAndTechnologyBhubaneswar {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model PilooModyCollegeOfArchitectureAbitCuttack {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
+
+model SgiSchoolOfArchitectureCuttack {
+  id          Int      @id @default(autoincrement())
+  studentName String
+  rollNo      String
+  branch      String
+  sgpa        String
+  subjects    String[]
+  year        String
+  semester    Int
+}
