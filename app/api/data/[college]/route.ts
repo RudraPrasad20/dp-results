@@ -19,9 +19,37 @@ export async function GET(
   const { college } = params;
 
   const modelMap: Record<string, any> = {
-    roland: db.roland,
-    vignan: db.vignan,
-    kalam: db.kalam,
+    ACEANG: db.adarshaCollegeOfEngineeringAnugul,
+    ABITCTC: db.ajayBinayInstituteOfTechnologyCuttack,
+    AIETBBSR: db.aryanInstituteOfEngineeringAndTechnologyBhubaneswar,
+    BIETBLSR: db.balasoreInstituteOfEngineeringAndTechnologyBalasore,
+    BIETBDRK: db.bhadrakInstituteOfEngineeringAndTechnologyBhadrak,
+    BCEBBSR: db.bhubaneswarCollegeOfEngineeringBhubaneswar,
+    BECBBSR: db.bhubaneswarEngineeringCollegeBhubaneswar,
+    BIITKHRD: db.bhubaneswarInstituteOfIndustrialTechnologyKhurda,
+    BITBBSR: db.bhubaneswarInstituteOfTechnologyBhubaneswar,
+    BDIETJSGD: db.blackDimondInstituteOfEngineeringAndTechnolgyJharsuguda,
+    CECBBSR: db.capitalEngineeringCollegeBhubaneswar,
+    CIPETBBSR: db.centralInstituteOfPetrochemicalsEngineeringAndTechnologyBhubaneswar,
+    CUPSBPUTRKLA: db.centreForUgAndPgStudiesBputRourkela,
+    CEBBSR: db.collegeOfEngineeringBhubaneswar,
+    DCTC: db.driemsCuttack,
+    EATMBBSR: db.einsteinAcademyOfTechnologyAndManagementBhubaneswar,
+    GECBBRS: db.gandhiEngineeringCollegeBhubaneswar,
+    GIETKHRD: db.gandhiInstituteForEducationAndTechnologyKhurda,
+    GITABBSR: db.gandhiInstituteForTechnologicalAdvancementBhubaneswar,
+    GITBBSR: db.gandhiInstituteForTechnologyBhubaneswar,
+    GIACRRGDA: db.gandhiInstituteOfAdvancedComputerAndResearchRayagada,
+    GIETBBSR: db.gandhiInstituteOfExcellentTechnocratsBhubaneswar,
+    GISATRGDA: db.gandhiInstituteOfScienceAndTechnolgyRaygada,
+    GITMBBSR: db.gandhiInstituteOfTechnologyAndManagementBhubaneswar,
+    GATEBER: db.gandiAcademyOfTechnologyAndEngineeringBerhampur,
+    GCEBER: db.gayatriCollegeOfEngineeringBerhampur
+
+
+
+
+
   };
 
   const model = modelMap[college];

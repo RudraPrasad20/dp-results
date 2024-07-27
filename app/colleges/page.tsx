@@ -1,26 +1,22 @@
-
+"use client";
 import ShowCard from "@/components/showCard";
 
 const colleges = [
   {
-    name: "ROLAND INSTITUTE OF TECHNOLOGY, BERHAMPUR",
-    location: "",
-    year: 2023,
-    id: "roland",
+    name: "ROLAND INSTITUTE OF TECHNOLOGY",
+    location: "BERHAMPUR",
+    id: "ACEANG",
   },
   {
-    name: "VIGNAN INSTITUTE OF TECHNOLOGY, BERHAMPUR",
-    location: "",
-    year: 2023,
-    id: "vignan",
+    name: "VIGNAN INSTITUTE OF TECHNOLOGY",
+    location: "BERHAMPUR",
+    id: "ABITCTC",
   },
   {
-    name: "KALAM INSTITUTE OF TECHNOLOGY, BERHAMPUR",
-    location: "",
-    year: 2023,
-    id: "kalam",
+    name: "KALAM INSTITUTE OF TECHNOLOGY",
+    location: "BERHAMPUR",
+    id: "AIETBBSR",
   },
-  // Add more college data here
 ];
 
 const CollegesPage = () => {
@@ -31,7 +27,6 @@ const CollegesPage = () => {
           key={college.id}
           name={college.name}
           location={college.location}
-          year={college.year}
           id={college.id}
         />
       ))}
