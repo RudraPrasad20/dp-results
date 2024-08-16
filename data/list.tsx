@@ -1,3 +1,4 @@
+
 export const colleges = [
   {
     name: "ADARSHA COLLEGE OF ENGINEERING",
@@ -109,24 +110,84 @@ export const colleges = [
     location: "BHUBANESWAR",
     id: "GIETBBSR",
   },
+  {
+    name: "GANDHI INSTITUTE OF SCIENCE & TECHNOLOGY",
+    location: "RAYAGADA",
+    id: "GISATRGDA",
+  },
+  {
+    name: "GANDHI INSTITUTE OF TECHNOLOGY AND MANAGEMENT",
+    location: "BHUBANESWAR",
+    id: "GITMBBSR",
+  },
+  {
+    name: "GANDHI ACADEMY OF TECHNOLOGY & MANAGEMENT",
+    location: "BERHAMPUR",
+    id: "GATEBER",
+  },
+  {
+    name: "GAYATRI COLLEGE OF ENGINEERING",
+    location: "BERHAMPUR",
+    id: "GCEBER",
+  },
+  {
+    name: "GOPAL KRUSHNA COLLEGE OF ENGINEERING & TECHNOLOGY",
+    location: "JAYPORE",
+    id: "GKCETJP",
+  },
+  {
+    name: "GOVERNMENT COLLEGE OF ENGINEERING",
+    location: "KEONJHAR",
+    id: "GCEKJH",
+  },
+  {
+    name: "GURUKUL INSTITUTE OF TECHNOLOGY",
+    location: "BHUBANESWAR",
+    id: "GKITBBSR",
+  },
+  {
+    name: "HITECH INSTITUTE OF TECHNOLOGY",
+    location: "BHUBANESWAR",
+    id: "HTITBBSR",
+  },
   // {
-  //   name: "GANDHI INSTITUTE OF SCIENCE & TECHNOLOGY",
-  //   location: "RAYAGADA",
-  //   id: "GISATRGDA",
+  //   name: "INDIRA GANDHI INSTITUTE OF TECHNOLOGY",
+  //   location: "SARANG",
+  //   id: "IGITSRG",
   // },
   // {
-  //   name: "GANDHI INSTITUTE OF TECHNOLOGY AND MANAGEMENT",
+  //   name: "INDOTECH COLLEGE OF ENGINEERING",
   //   location: "BHUBANESWAR",
-  //   id: "GITMBBSR",
+  //   id: "ITCEBBSR",
   // },
+  {
+    name: "INDUS COLLEGE OF ENGINEERING",
+    location: "BHUBANESWAR",
+    id: "ICEBBSR",
+  },
+  {
+    name: "KALAM INSTITUTE OF TECHNOLOGY",
+    location: "BERHAMPUR",
+    id: "KITBER",
+  },
+  {
+    name: "KMBB COLLEGE OF ENGINEERING & TECHNOLOGY",
+    location: "KHURDA",
+    id: "KCETKHR",
+  },
+  {
+    name: "KONARK INSTITUTE OF SCIENCE & TECHNOLOGY",
+    location: "BHUBANESWAR",
+    id: "KISTBBSR",
+  },
   // {
-  //   name: "GANDHI ACADEMY OF TECHNOLOGY & MANAGEMENT",
-  //   location: "BERHAMPUR",
-  //   id: "GATEBER",
+  //   name: "KRUTTIKA INSTITUTE OF TECHNICAL EDUCATION",
+  //   location: "KHURDA",
+  //   id: "KITEKHR",
   // },
-  // {
-  //   name: "GAYATRI COLLEGE OF ENGINEERING",
-  //   location: "BERHAMPUR",
-  //   id: "GCEBER",
-  // },
+  {
+    name: "MAHARAJA POLYTECHNIC",
+    location: "BHUBANESWAR",
+    id: "MPBBSR",
+  },
 ];
