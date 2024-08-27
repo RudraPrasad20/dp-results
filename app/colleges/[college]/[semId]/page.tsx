@@ -34,7 +34,7 @@ import {
 } from "@/components/ui/table";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
-import { notFound } from "next/navigation";
+import { notFound, useParams, useSearchParams } from "next/navigation";
 
 type Student = {
   id: number;
@@ -100,8 +100,11 @@ const columns: ColumnDef<Student>[] = [
 ];
 
 export default function StudentList({ params }: { params: { college: string, semId: string } }) {
+  const searchParams = useSearchParams()
   const { college, semId } = params;
   const semesterId = parseInt(semId, 10);
+  const batch = searchParams.get("batch");
+  const year = searchParams.get("year");
   const [students, setStudents] = useState<Student[]>([]);
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
@@ -109,14 +112,14 @@ export default function StudentList({ params }: { params: { college: string, sem
   const [rowSelection, setRowSelection] = useState({});
   const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 40 });
 
-  if (isNaN(semesterId)) {
+  if (isNaN(semesterId)  || !batch || !year ) {
     notFound();
   }
 
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get(`/api/data/${college}?semId=${semesterId}`);
+        const response = await axios.get(`/api/data/${college}?semId=${semesterId}&batch=${batch}&year=${year}`);
         setStudents(response.data);
       } catch (error) {
         console.error("Error fetching students:", error);

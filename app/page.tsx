@@ -1,14 +1,10 @@
 import { ModeToggle } from "@/components/modeToggle";
-import CommandSearch from "@/components/searchbar";
 import { colleges } from "@/data/list";
+import Link from "next/link";
 import React from "react";
 
 
 const page = () => {
-  const commands = colleges.map(item => ({
-    value: item.id,
-    label: item.name,
-  }));
 
   
   return (
@@ -17,7 +13,8 @@ const page = () => {
       
       <div>
         <ModeToggle />
-      </div> <CommandSearch commands={commands} />;
+      </div>
+      <Link href={"/colleges"}>COLLEGES</Link>
     </div>
   );
 };

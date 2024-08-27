@@ -8,8 +8,10 @@ export async function GET(
   const { searchParams } = new URL(req.url);
   const semIdParam = searchParams.get("semId");
   const semesterId = parseInt(semIdParam ?? "");
+  const batch = searchParams.get("batch");
+  const year = searchParams.get("year");
 
-  if (isNaN(semesterId)) {
+  if (isNaN(semesterId) || !batch || !year) {
     return NextResponse.json(
       { message: "Invalid semester ID" },
       { status: 400 }
@@ -112,6 +114,10 @@ export async function GET(
     const students = await model.findMany({
       where: {
         semester: semesterId,
+        branch:{
+          startsWith: batch.slice(0, 6),
+        },
+        year
       },
     });
     return NextResponse.json(students);
