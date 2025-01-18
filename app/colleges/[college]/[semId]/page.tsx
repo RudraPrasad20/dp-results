@@ -151,7 +151,7 @@ export default function StudentList({ params }: { params: { college: string, sem
   });
 
   return (
-    <div className="w-full m-6">
+    <div className="w-full p-6 mt-14">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter by name..."
