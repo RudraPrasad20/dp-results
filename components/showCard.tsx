@@ -32,23 +32,23 @@ const ShowCard: React.FC<CollegeCardProps> = ({ name, location, id }) => {
   const isDisabled = !batch || !year;
 
   return (
-    <Card className="hover:shadow-lg">
+    <Card className="hover:shadow-lg ">
       <CardHeader>
         <CardTitle>{name}</CardTitle>
         <p className="flex gap-2">
           <MapPin />
           {location}
         </p>
-        {/* <CardDescription>{year || "Select Year"}</CardDescription> */}
+
        <CardDescription/>
         <div className="flex gap-5">
           <Select onValueChange={(value) => setBatch(value.slice(0, 5))}>
             <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Batch" />
+              <SelectValue placeholder="Course" />
             </SelectTrigger>
             <SelectContent>
-              {/* value should be according to the db data */}
               <SelectItem value="B.Tech">BTECH</SelectItem>
+              {/* <SelectItem value="BCA">BCA</SelectItem> */}
               <SelectItem value="MBA">MBA</SelectItem>
               <SelectItem value="MCA">MCA</SelectItem>
             </SelectContent>

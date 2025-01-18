@@ -34,7 +34,7 @@ import {
 } from "@/components/ui/table";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
-import { notFound, useParams, useSearchParams } from "next/navigation";
+import { notFound, useSearchParams } from "next/navigation";
 
 type Student = {
   id: number;
@@ -151,7 +151,7 @@ export default function StudentList({ params }: { params: { college: string, sem
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full m-6">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter by name..."
@@ -228,7 +228,7 @@ export default function StudentList({ params }: { params: { college: string, sem
                   colSpan={columns.length}
                   className="h-24 text-center"
                 >
-                  no data found
+                  Loading Data Wait a Sec...
                 </TableCell>
               </TableRow>
             )}
