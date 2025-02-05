@@ -1,3 +1,95 @@
+// "use client"
+
+// import { zodResolver } from "@hookform/resolvers/zod"
+// import { useForm } from "react-hook-form"
+// import { z } from "zod"
+// import { Button } from "@/components/ui/button"
+// import {
+//   Form,
+//   FormControl,
+//   FormDescription,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form"
+// import { Input } from "@/components/ui/input"
+// import { useEffect, useState } from "react"
+
+// const formSchema = z.object({
+//   msg: z.string().min(2, {
+//     message: "Message must be at least 2 characters.",
+//   }),
+// })
+
+// export default function MsgForm() {
+//   const [messages, setMessages] = useState<string[]>([]);
+
+//   const form = useForm<z.infer<typeof formSchema>>({
+//     resolver: zodResolver(formSchema),
+//     defaultValues: {
+//       msg: "",
+//     },
+//   })
+
+//   async function fetchMessages() {
+//     const response = await fetch('/api/community');
+//     const data = await response.json();
+//     setMessages(data.messages);
+//   }
+
+//   useEffect(() => {
+//     fetchMessages();
+//   }, []);
+
+//   async function onSubmit(values: z.infer<typeof formSchema>) {
+//     const response = await fetch('/api/community', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({ msg: values.msg }),
+//     });
+
+//     if (response.ok) {
+//       fetchMessages();
+//       form.reset();
+//     }
+//   }
+
+//   return (
+//     <div>
+//       <Form {...form}>
+//         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+//           <FormField
+//             control={form.control}
+//             name="msg"
+//             render={({ field }) => (
+//               <FormItem>
+//                 <FormLabel>Message</FormLabel>
+//                 <FormControl>
+//                   <Input placeholder="Enter your message" {...field} />
+//                 </FormControl>
+//                 <FormMessage />
+//               </FormItem>
+//             )}
+//           />
+//           <Button type="submit">Submit</Button>
+//         </form>
+//       </Form>
+//       <div className="mt-4">
+//         <h2>Messages</h2>
+//         <ul>
+//           {messages.map((message, index) => (
+//             <li key={index}>{message}</li>
+//           ))}
+//         </ul>
+//       </div>
+//     </div>
+//   )
+// }
+
+
 "use client";
 
 const CommunityDemo = () => {

@@ -81,6 +81,14 @@ const ShowCard: React.FC<CollegeCardProps> = ({ name, location, id }) => {
         >
           SEM 2
         </Button>
+        <Button
+          onClick={() =>
+            router.push(`/colleges/${id}/3?batch=${batch}&year=${year}`)
+          }
+          disabled={isDisabled}
+        >
+          SEM 3
+        </Button>
       </CardContent>
     </Card>
   );

@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
+import { useRouter } from "next/navigation";
 import { BackgroundLines } from "./ui/background-lines";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 // import React from "react";
 // import { BackgroundLines } from "@/components/ui/background-lines";
@@ -25,8 +27,8 @@ import { Button } from "./ui/button";
 //   );
 // }
 
-
 export function Hero() {
+  const router = useRouter();
 
   return (
     <>
@@ -34,7 +36,12 @@ export function Hero() {
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans py-4 sm:py-6 md:py-10 relative z-20 font-bold tracking-tight">
           Finding Results? <br /> Here We Go...
         </h2>
-        <Button>Find Results</Button>
+        <Button
+          className="relative z-10"
+          onClick={() => router.push("/colleges")}
+        >
+          Find Results
+        </Button>
       </BackgroundLines>
     </>
   );
